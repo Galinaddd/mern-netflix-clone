@@ -2,7 +2,8 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
 import LoginPage from "./pages/LoginPage";
-import SignUpPage from "./pages/SignupPage";
+import SignUpPage from "./pages/SignUpPage";
+
 import HomePage from "./pages/home/HomePage";
 import Footer from "./components/Footer";
 
