@@ -6,7 +6,7 @@ const SignUpPage = () => {
   const { searchParams } = new URL(document.location);
   const emailValue = searchParams.get("email");
 
-  const { signup } = useAuthStore();
+  const { signup, isSigningUp } = useAuthStore();
 
   const [email, setEmail] = useState(emailValue || "");
 
@@ -28,9 +28,7 @@ const SignUpPage = () => {
 
       <div className="flex justify-center items-center mt-20 mx-3">
         <div className="w-full max-w-md p-8 space-y-6 bg-black/60 rounded-lg shadow-md">
-          <h1 className="text-center text-white text-2xl font-bold mb-4">
-            Sign Up
-          </h1>
+          <h1 className="text-center text-white text-2xl font-bold mb-4">{}</h1>
 
           <form className="space-y-4" onSubmit={handleSignUp}>
             <div>
@@ -85,8 +83,9 @@ const SignUpPage = () => {
               <button
                 className="w-full py-2 bg-red-600 text-white font-semibold rounded-md
 							hover:bg-red-700"
+                disabled={isSigningUp}
               >
-                Sign Up
+                {isSigningUp ? "Loading..." : "Sign Up"}
               </button>
             </div>
           </form>
