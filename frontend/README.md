@@ -1,8 +1,45 @@
-# React + Vite
+# TWITTER-CLONE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Full stack applicatin with Tech Stack:
 
-Currently, two official plugins are available:
+- React.js
+- Tailwind
+- Node.js
+- Express.js
+- MongoDB
+- State manager - zustand
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features:
+
+- ⚛️ Tech Stack: React.js, MongoDB, Node.js, Express, Tailwind
+- 🔐 Authentication with JWT
+- 📱 Responsive UI
+- 🎬 Fetch Movies and Tv Show
+- 🔎 Search for Actors and Movies
+- 🎥 Watch Trailers
+- 🔥 Fetch Search History
+- 🐱‍👤 Get Similar Movies/Tv Shows
+
+### Usage
+
+### Setup .env file
+
+```shell
+MONGO_URI =...
+PORT =...
+JWT_SECRET = ...
+NODE_ENV =...
+TMDB_API_KEY =...
+```
+
+### Build the app
+
+```shell
+npm run build
+```
+
+### Start the app
+
+```shell
+npm run start
+```
